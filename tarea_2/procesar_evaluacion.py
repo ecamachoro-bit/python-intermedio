@@ -45,6 +45,7 @@ def tesseract():
 
 
 def asr():
+    from seudonimos import aplicar  # las salidas se guardan ya seudonimizadas
     from voz import SR, Transcriptor, cargar_audio
     clips = MUESTRA.query("modalidad == 'audio'")["id"].tolist()
     audios = {c: cargar_audio(str(RAIZ / "datos" / "raw" / "audio" / f"{c}.wav")) for c in clips}
@@ -58,7 +59,7 @@ def asr():
     for c, x in audios.items():
         t0 = time.perf_counter()
         segs, _ = modelo.transcribe(x, language="es")
-        texto = " ".join(s.text.strip() for s in segs)
+        texto = aplicar(c, " ".join(s.text.strip() for s in segs))
         filas.append({"id": c, "texto": texto, "segundos": round(time.perf_counter() - t0, 1), "duracion_seg": round(len(x) / SR, 1),
                       "modelo": "faster-whisper small (int8 CPU, sin VAD, beam 5 por defecto)", "carga_seg": round(carga, 1)})
         print("small", c, filas[-1]["segundos"], "s", flush=True)
@@ -70,7 +71,7 @@ def asr():
     filas = []
     for c, x in audios.items():
         t0 = time.perf_counter()
-        texto = " ".join(s.texto for s in tr.segmentos(x))
+        texto = aplicar(c, " ".join(s.texto for s in tr.segmentos(x)))
         filas.append({"id": c, "texto": texto, "segundos": round(time.perf_counter() - t0, 1), "duracion_seg": round(len(x) / SR, 1),
                       "modelo": "Parakeet TDT 0.6B v3 (NVIDIA, CPU float32, tramos VAD Silero)", "carga_seg": round(tr.segundos_carga, 1)})
         print("parakeet", c, filas[-1]["segundos"], "s", flush=True)

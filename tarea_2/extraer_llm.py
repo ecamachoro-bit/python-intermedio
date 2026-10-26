@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 RAIZ = Path(__file__).resolve().parent
 CACHE = RAIZ / "datos" / "salidas_llm"
-MODELOS = ["gemini-3.7-flash", "gemini-3.5-flash-lite"]  # el segundo solo si el primero agota la cuota
+MODELOS = ["gemini-3.5-flash-lite"]  # el plan gratuito de 3.7-flash solo permite 20 solicitudes al día; se usa un único modelo para los 53 registros
 
 PROMPT = """Eres un asistente de archivística. Recibes el texto extraído automáticamente (OCR o transcripción de audio)
 de un {modalidad} peruano. El texto puede tener errores de reconocimiento.

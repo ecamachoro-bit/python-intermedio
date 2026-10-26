@@ -99,21 +99,21 @@ with tab_res:
     fig = px.histogram(docs_f, x="tipo", color="tipo", category_orders={"tipo": ["impreso", "foto", "manuscrito"]},
                        title="Documentos por tipo (8 impresos, 8 fotos, 9 manuscritos)")
     fig.update_layout(showlegend=False, yaxis_title="Documentos", xaxis_title="")
-    g1.plotly_chart(fig, use_container_width=True)
+    g1.plotly_chart(fig, width="stretch")
     fig = px.box(docs_f, x="tipo", y="caracteres", points="all", hover_data=["id"],
                  category_orders={"tipo": ["impreso", "foto", "manuscrito"]},
                  title="Los impresos producen mucho más texto OCR que fotos y manuscritos")
     fig.update_layout(yaxis_title="Caracteres extraídos", xaxis_title="")
-    g2.plotly_chart(fig, use_container_width=True)
+    g2.plotly_chart(fig, width="stretch")
     g3, g4 = st.columns(2)
     por = aud_f.groupby("condicion", as_index=False)["minutos"].sum().sort_values("minutos")
     fig = px.bar(por, x="minutos", y="condicion", orientation="h", title="Minutos de audio por condición de grabación")
     fig.update_layout(yaxis_title="", xaxis_title="Minutos")
-    g3.plotly_chart(fig, use_container_width=True)
+    g3.plotly_chart(fig, width="stretch")
     fig = px.scatter(aud_f, x="duracion_seg", y="palabras", color="condicion", hover_data=["id"],
                      title="Palabras transcritas frente a duración de cada clip")
     fig.update_layout(xaxis_title="Duración (s)", yaxis_title="Palabras ASR")
-    g4.plotly_chart(fig, use_container_width=True)
+    g4.plotly_chart(fig, width="stretch")
 
 # ───────────────────────────────────────── explorador de documentos
 with tab_doc:
@@ -165,7 +165,7 @@ with tab_aud:
             st.caption(f"Reproducción autorizada por la licencia **{a['licencia']}** (Wikimedia Commons). "
                        f"Fuente: {T['fuentes'].set_index('id').loc[sel, 'fuente_url']}")
         else:
-            st.info("Este clip no se incluye en la muestra publicada (contiene nombres de personas privadas en la voz). "
+            st.info("Este clip no forma parte de la muestra de audio publicada (solo se publican 4 clips sin menciones a personas privadas). "
                     "Se muestra su transcripción seudonimizada.")
         st.subheader("Transcripción (Whisper large-v3-turbo + VAD, seudonimizada)")
         texto = a["texto_asr"]
@@ -181,11 +181,11 @@ with tab_aud:
             alt = T["asr_alternativos"]
             if len(alt) and sel in set(alt["id"]):
                 comp |= alt.set_index("id").loc[sel].to_dict()
-            st.dataframe(pd.DataFrame({"texto": comp}), use_container_width=True)
+            st.dataframe(pd.DataFrame({"texto": comp}), width="stretch")
             fila = det[det["id"] == sel]
             if len(fila):
                 fig = px.bar(fila, x="modelo", y="valor", title=f"WER por modelo en {sel}", labels={"valor": "WER"})
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
         st.subheader("Campos extraídos por el LLM")
         st.json(campos_llm.get(sel, {}))
 
@@ -195,20 +195,20 @@ with tab_eval:
         st.warning("Las métricas aparecen cuando se ejecuta 02_evaluacion.ipynb.")
     else:
         st.subheader("Tabla comparativa (mismos 10 documentos y 10 clips para todos los modelos)")
-        st.dataframe(met, hide_index=True, use_container_width=True)
+        st.dataframe(met, hide_index=True, width="stretch")
         det_f = det[det["modelo"].isin(modelos_sel)]
         e1, e2 = st.columns(2)
         fig = px.box(det_f[det_f["métrica"] == "CER"], x="grupo", y="valor", color="modelo", points="all", hover_data=["id"],
                      title="CER por tipo de documento: los manuscritos y fotos concentran el error")
         fig.update_layout(xaxis_title="", yaxis_title="CER")
-        e1.plotly_chart(fig, use_container_width=True)
+        e1.plotly_chart(fig, width="stretch")
         fig = px.box(det_f[det_f["métrica"] == "WER"], x="grupo", y="valor", color="modelo", points="all", hover_data=["id"],
                      title="WER por condición de grabación")
         fig.update_layout(xaxis_title="", yaxis_title="WER")
-        e2.plotly_chart(fig, use_container_width=True)
+        e2.plotly_chart(fig, width="stretch")
         if len(T["auditoria_llm"]):
             st.subheader("Auditoría humana de 20 extracciones del LLM")
-            st.dataframe(T["auditoria_llm"], hide_index=True, use_container_width=True)
+            st.dataframe(T["auditoria_llm"], hide_index=True, width="stretch")
 
 # ───────────────────────────────────────── datos
 with tab_datos:
@@ -216,6 +216,6 @@ with tab_datos:
     opcion = st.radio("Tabla", ["Documentos", "Transcripciones", "Extracción LLM", "Fuentes"], horizontal=True)
     tabla = {"Documentos": docs_f.drop(columns=["caracteres"]), "Transcripciones": aud_f.drop(columns=["minutos", "palabras"]),
              "Extracción LLM": llm, "Fuentes": T["fuentes"]}[opcion]
-    st.dataframe(tabla, hide_index=True, use_container_width=True)
+    st.dataframe(tabla, hide_index=True, width="stretch")
     st.download_button(f"Descargar {opcion.lower()} (CSV)", tabla.to_csv(index=False).encode("utf-8"),
                        file_name=f"{opcion.lower().replace(' ', '_')}.csv", mime="text/csv")
