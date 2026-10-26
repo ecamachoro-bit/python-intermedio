@@ -1,0 +1,21 @@
+id,modalidad,tipo_o_condicion,motivo
+doc_002,documento,impreso,Constitución de 1823: impreso antiguo con ortografía de época (j por g)
+doc_008,documento,impreso,Informe de 1903: impreso nítido moderno
+doc_009,documento,foto,Texto en escaleras: inclinación fuerte y reflejos
+doc_010,documento,foto,Texto en vidrio: reflejos y fondo oscuro
+doc_011,documento,foto,Cartel de Barranco: brillo y texto bilingüe
+doc_012,documento,foto,Página de libro con sombra y curvatura
+doc_014,documento,foto,Sumario con columnas de números e inclinación
+doc_017,documento,manuscrito,Manuscrito propio 1
+doc_018,documento,manuscrito,Manuscrito propio 2
+doc_019,documento,manuscrito,Manuscrito propio 3
+clip_007,audio,marcha (ruido de multitud),Entrevista en una marcha
+clip_009,audio,exteriores,Entrevista a una señora en Pomabamba
+clip_010,audio,exteriores,Entrevista en fiesta patronal de Chuyas
+clip_011,audio,estadio (ruido),Entrevista en el medio tiempo
+clip_022,audio,testimonio grabado,Testimonio de servidora de salud
+clip_023,audio,testimonio grabado,Testimonio de usuaria de salud
+clip_024,audio,testimonio grabado,Testimonio de servidora de salud
+clip_025,audio,testimonio grabado,Testimonio de servidora de salud
+clip_027,audio,testimonio grabado,Testimonio de Diana Palomino (otra fuente)
+clip_028,audio,testimonio grabado,Testimonio de Diana Palomino (otra fuente)

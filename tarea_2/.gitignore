@@ -12,3 +12,4 @@ modelos/*.safetensors
 modelos/*.bin
 modelos/*.pdparams
 modelos/checkpoint-*/
+modelos/tessdata/
