@@ -30,7 +30,8 @@ def tesseract():
     import pytesseract
     from PIL import Image, ImageOps
     pytesseract.pytesseract.tesseract_cmd = TESSERACT
-    config = f'--tessdata-dir "{RAIZ / "modelos" / "tessdata"}" --psm 3'
+    os.environ["TESSDATA_PREFIX"] = str(RAIZ / "modelos" / "tessdata")  # --tessdata-dir falla con espacios en la ruta
+    config = "--psm 3"
     filas = []
     for did in MUESTRA.query("modalidad == 'documento'")["id"]:
         ruta = next((RAIZ / "datos" / "raw" / "documentos").glob(f"{did}.*"))

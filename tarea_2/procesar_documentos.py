@@ -16,12 +16,13 @@ DOCS = Path(__file__).resolve().parent / "datos" / "raw" / "documentos"
 SALIDAS = DOCS / "ocr"
 OPCIONES = dict(
     lang="es",
+    text_detection_model_name="PP-OCRv5_mobile_det",  # detector ligero: el "server" tarda ~7 min por página en esta CPU
     use_doc_orientation_classify=False,   # no girar la página completa
     use_doc_unwarping=False,              # no "planchar" hojas dobladas
     use_textline_orientation=False,       # no girar cada línea
     enable_mkldnn=False,                  # oneDNN falla en Windows con PaddlePaddle 3.x (NotImplementedError PIR)
 )
-NOMBRE_MODELO = "PaddleOCR {v} (PP-OCRv5, lang=es, sin orientación ni unwarping, CPU)"
+NOMBRE_MODELO = "PaddleOCR {v} (PP-OCRv5 mobile det + PP-OCRv6 medium rec, lang=es, sin orientación ni unwarping, CPU)"
 
 
 def cargar():
