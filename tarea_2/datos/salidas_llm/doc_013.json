@@ -1,0 +1,16 @@
+{
+ "id": "doc_013",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Texto ilegible o corrupto",
+  "resumen": "El texto es ilegible y presenta múltiples errores de reconocimiento OCR.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

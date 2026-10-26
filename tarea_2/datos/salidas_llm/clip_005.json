@@ -1,0 +1,17 @@
+{
+ "id": "clip_005",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Entrevista sobre marcha juvenil",
+  "resumen": "[PERSONA_06] entrevista al señor [PERSONA_07] sobre su mensaje para la juventud y su opinión acerca de una marcha.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "Que sigan sus sueños, que hagan lo que les gusta, con responsabilidad y que luchen por eso",
+   "Bien, colorida, tratante comercial también."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

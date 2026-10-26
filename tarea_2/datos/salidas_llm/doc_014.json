@@ -1,0 +1,16 @@
+{
+ "id": "doc_014",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Sumario de obras literarias",
+  "resumen": "El documento presenta el sumario que detalla las páginas de una introducción, cronología, principales ediciones y varios relatos como La metamorfosis y Un artista del hambre.",
+  "idioma": "es",
+  "tipo_documento": "índice",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

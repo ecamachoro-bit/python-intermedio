@@ -65,7 +65,7 @@ cer = valor_metrica("PaddleOCR")
 c[2].metric("CER PaddleOCR (10 docs)", f"{cer:.2f}" if cer is not None else "—")
 wer = valor_metrica("turbo")
 c[3].metric("WER Whisper turbo + VAD (10 clips)", f"{wer:.2f}" if wer is not None else "—")
-if len(T["auditoria_llm"]):
+if len(T["auditoria_llm"]) and T["auditoria_llm"]["correcto"].astype(str).isin(["0", "1"]).all():
     ok = T["auditoria_llm"]["correcto"].astype(int).sum()
     c[4].metric("Concordancia LLM vs. auditoría humana", f"{ok / 20:.0%}", f"{ok}/20 correctas", delta_color="off")
 else:
@@ -206,7 +206,7 @@ with tab_eval:
                      title="WER por condición de grabación")
         fig.update_layout(xaxis_title="", yaxis_title="WER")
         e2.plotly_chart(fig, width="stretch")
-        if len(T["auditoria_llm"]):
+        if len(T["auditoria_llm"]) and T["auditoria_llm"]["correcto"].astype(str).isin(["0", "1"]).all():
             st.subheader("Auditoría humana de 20 extracciones del LLM")
             st.dataframe(T["auditoria_llm"], hide_index=True, width="stretch")
 

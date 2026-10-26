@@ -1,0 +1,17 @@
+{
+ "id": "clip_022",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "violencia obstétrica en clínica",
+  "resumen": "Una obstetra relata un caso de violencia obstétrica donde una técnica de enfermería agrede físicamente a una gestante y, con aprobación de otra obstetra, le aplican la maniobra de Kristeller sin su consentimiento.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "la técnica de enfermería le pega en los muslos con su mano y le dice abre abre las piernas",
+   "la misma técnica de enfermería con aprobación de la obstetra le aplican la maniobra de Chris Teller"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

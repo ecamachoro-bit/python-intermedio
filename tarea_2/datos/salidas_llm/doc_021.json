@@ -1,0 +1,16 @@
+{
+ "id": "doc_021",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "elogio a las mujeres",
+  "resumen": "El texto contiene errores de OCR y afirma que las mujeres son hermosas.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

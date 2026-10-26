@@ -1,0 +1,17 @@
+{
+ "id": "clip_021",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Maltrato obstétrico durante el parto",
+  "resumen": "Una paciente relata cómo fue llevada a inducción por un supuesto bebé macrosómico, presenciando burlas a otras parturientas y sufriendo agresiones físicas y verbales por parte del personal médico respecto a su peso.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "Ellos les decían que eran unas débiles, que mejor no les daban palabras de aliento porque luego se engríen.",
+   "un obstetra empezó a pellizcarme, diciendo que en realidad no tenía la barriga muy grande, sino que estaba gorda y tenía demasiado tejido adiposo"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

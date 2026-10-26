@@ -1,0 +1,18 @@
+{
+ "id": "clip_009",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Entrevista sobre festividad en Pumbabamba",
+  "resumen": "Una persona entrevista a [PERSONA_10], quien es oriunda del distrito de Pumbabamba y asiste cada año a las celebraciones del pueblo, mencionando la presencia de bailes y misas.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "Yo soy de... misma Pumbabamba.",
+   "como conozco, todos los años vengo.",
+   "Hay bastantes del pueblo."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

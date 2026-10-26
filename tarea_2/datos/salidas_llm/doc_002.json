@@ -1,0 +1,16 @@
+{
+ "id": "doc_002",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Constitución y religión del Perú",
+  "resumen": "El documento establece la religión católica como la oficial de la República, define quiénes son considerados ciudadanos peruanos y prohíbe la esclavitud y el comercio de negros en el país.",
+  "idioma": "es",
+  "tipo_documento": "ley",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

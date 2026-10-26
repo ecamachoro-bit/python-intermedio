@@ -1,0 +1,16 @@
+{
+ "id": "doc_019",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Celebración del día del campesino",
+  "resumen": "Se comunica la celebración del día del campesino con actividades físicas y motricidad fina, enviando además un poncho y una canasta de frutas.",
+  "idioma": "es",
+  "tipo_documento": "carta",
+  "emisor": null,
+  "fecha": "24/06/25",
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

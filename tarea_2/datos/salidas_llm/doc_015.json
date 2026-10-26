@@ -1,0 +1,16 @@
+{
+ "id": "doc_015",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "El Decamerón cuento y castigo",
+  "resumen": "Fragmento de una historia de El Decamerón donde Ambruogiuolo sufre un castigo severo por su crimen y la señora Zinevra es honrada y premiada.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": "veinte mil ducados"
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

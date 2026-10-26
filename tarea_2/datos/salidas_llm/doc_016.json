@@ -1,0 +1,16 @@
+{
+ "id": "doc_016",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Índice de obras literarias",
+  "resumen": "El texto presenta un índice con títulos y autores de obras literarias como El Decamerón de Giovanni Boccaccio y Coloquio de damas de Pietro Aretino.",
+  "idioma": "es",
+  "tipo_documento": "índice",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

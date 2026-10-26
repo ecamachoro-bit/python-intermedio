@@ -1,0 +1,17 @@
+{
+ "id": "clip_018",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Mala atención en hospital peruano",
+  "resumen": "Una paciente relata haber recibido un trato pésimo y deshumanizado por parte del personal de enfermería y un doctor durante su ingreso por emergencia para dar a luz.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "Me dijo que tenía que soportar, que espere parada.",
+   "Pero el área de emergencia es un área de tortura, como si ser madre fuera un castigo."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

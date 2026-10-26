@@ -1,0 +1,17 @@
+{
+ "id": "clip_008",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Celebración de la imagen en Chuyas",
+  "resumen": "Una persona conversa sobre la celebración de una imagen religiosa en Chuyas y su participación a pesar de encontrarse en otro lugar.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "¿Usted pertenece a Pueblo? Sí, sí.",
+   "la imagen se celebra ya en Glacier, en Chuyas"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

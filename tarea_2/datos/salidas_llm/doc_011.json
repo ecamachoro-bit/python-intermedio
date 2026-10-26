@@ -1,0 +1,16 @@
+{
+ "id": "doc_011",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "reflexion sobre la soledad marina",
+  "resumen": "El documento fragmentado contiene frases en español e inglés sobre la soledad en el mar.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

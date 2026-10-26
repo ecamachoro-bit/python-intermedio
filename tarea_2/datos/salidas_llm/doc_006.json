@@ -1,0 +1,16 @@
+{
+ "id": "doc_006",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "datos geográficos y demográficos",
+  "resumen": "El documento presenta información geográfica, límites, superficie, población y división política de la provincia de Luya en Amazonas y el departamento de Áncash.",
+  "idioma": "es",
+  "tipo_documento": "índice",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

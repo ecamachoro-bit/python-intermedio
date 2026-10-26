@@ -1,0 +1,16 @@
+{
+ "id": "doc_001",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "sabiduría divina y humildad humana",
+  "resumen": "El texto reflexiona sobre cómo la sabiduría, el poder y la justicia provienen exclusivamente de Dios, manifestándose a través de la anulación y humildad de figuras como el Apóstol y el Rey David.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

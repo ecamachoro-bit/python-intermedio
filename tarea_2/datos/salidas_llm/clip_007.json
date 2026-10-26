@@ -1,0 +1,17 @@
+{
+ "id": "clip_007",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "significado de la marcha del orgullo",
+  "resumen": "En una entrevista sobre la marcha del orgullo, la persona entrevistada explica que la marcha significa luchar por sus derechos y el respeto. Además, envía un mensaje de apoyo a la juventud de la comunidad.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "la marcha del orgullo es luchar por mis derechos para no tener miedo a salir a la calle",
+   "que no tengan miedo porque somos muchos, somos muchos los que nos vamos a recibir con los brazos abiertos"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

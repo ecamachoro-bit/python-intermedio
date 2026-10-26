@@ -1,0 +1,17 @@
+{
+ "id": "clip_017",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Negligencia y juicio en obstetricia",
+  "resumen": "Una obstetra se negó a atender oportunamente a una joven de 20 años con sospecha de embarazo, sometiéndola a burocracia y críticas morales en lugar de brindarle atención.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "la obsetra me dijo que lo hizo para que no vuelva a hacer cosas de adultos, que esperara y que asuma las consecuencias",
+   "Lo mismo pasaba con otras pacientes a las que juzgaba y trataba con sarcasmo por su edad y por la cantidad de hijos que tenían."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

@@ -1,0 +1,17 @@
+{
+ "id": "clip_027",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Brechas de la mujer campesina",
+  "resumen": "Se discuten las dificultades y brechas que enfrenta la mujer campesina debido a la falta de estudios superiores y apoyo, aunque se reconoce que la situación ha mejorado con el tiempo.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "identificar las brechas relacionadas a la mujer campesina es algo muy visible",
+   "hoy en día creo que las cosas han cambiado y han avanzado para bien a favor de las mujeres"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

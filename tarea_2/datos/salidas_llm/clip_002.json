@@ -1,0 +1,18 @@
+{
+ "id": "clip_002",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "identidad y derechos en el Perú",
+  "resumen": "Entrevista a Aurora Coronado sobre su perspectiva del Perú, abordando temas de identidad nacional, aspectos positivos del crecimiento del país, y problemáticas como la corrupción, el racismo y la vulneración de los derechos de las mujeres indígenas.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "el perú es mi país donde he nacido amo mucho porque acá vivo tengo todo lo que necesito y adoro mi país",
+   "los aspectos negativos es que la corrupción y dentro de los gobiernos siempre ha habido este demasiada corrupción",
+   "queremos dejar generaciones que conozcan sus derechos que se hagan respetar no solamente el derecho a nuestro territorio"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

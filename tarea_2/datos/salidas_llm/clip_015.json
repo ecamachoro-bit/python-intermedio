@@ -1,0 +1,17 @@
+{
+ "id": "clip_015",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "experiencia traumática en examen prenatal",
+  "resumen": "Una paciente relata su primer examen prenatal, donde le realizaron un procedimiento intrauterino doloroso e invasivo sin explicación previa por parte del médico.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "El médico no trató de explicarme nada.",
+   "Protesté, pero el médico dijo, no duele esa incomodidad."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

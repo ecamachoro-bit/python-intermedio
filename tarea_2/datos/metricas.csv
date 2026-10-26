@@ -1,0 +1,6 @@
+modalidad,modelo,rol,métrica,CER/WER,segundos_totales,segundos_por_archivo,factor_tiempo_real,carga_modelo_seg
+documento,PaddleOCR 3.7 (base),línea base,CER,0.086,358.0,35.8,,
+documento,Tesseract 5 spa,alternativo,CER,0.193,17.9,1.8,,
+audio,faster-whisper small (base),línea base,WER,0.178,290.2,29.0,0.67,3.8
+audio,Whisper large-v3-turbo + VAD,pipeline,WER,0.116,524.7,52.5,1.21,
+audio,Parakeet TDT 0.6B v3,alternativo,WER,0.201,196.0,19.6,0.45,187.6

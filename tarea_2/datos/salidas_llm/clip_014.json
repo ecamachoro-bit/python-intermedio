@@ -1,0 +1,17 @@
+{
+ "id": "clip_014",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "negligencia médica en parto",
+  "resumen": "Una mujer dio a luz tras una cesárea de emergencia después de una larga espera, y una enfermera le informó al despertar que su bebé había fallecido presuntamente por negligencia.",
+  "idioma": "es",
+  "numero_hablantes": null,
+  "citas_clave": [
+   "La dilatación solo le llegaba a tres y no avanzaba.",
+   "Se murió por una negligencia."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

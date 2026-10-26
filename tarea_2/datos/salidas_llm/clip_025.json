@@ -1,0 +1,17 @@
+{
+ "id": "clip_025",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Maltrato obstétrico a paciente",
+  "resumen": "Una obstetra identificada como [PERSONA_11] agredió verbal y físicamente a una paciente durante labor de parto en una sala de expulsivos.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "¡Abre las piernas, mierda!",
+   "¡Te vas a morir, mierda! ¡Y por tu culpa tu hijo también se va a morir."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

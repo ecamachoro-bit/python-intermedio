@@ -1,0 +1,16 @@
+{
+ "id": "doc_018",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "necesidad de dinero",
+  "resumen": "El texto es muy breve e ilegible, indicando que se necesita una cantidad de dinero para algo.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

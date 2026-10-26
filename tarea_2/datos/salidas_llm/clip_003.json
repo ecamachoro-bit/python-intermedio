@@ -1,0 +1,17 @@
+{
+ "id": "clip_003",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Expectativas sobre el partido de fútbol",
+  "resumen": "Un estudiante de la Universidad Nacional Mayor de San Marcos entrevista a una ciudadana para conocer sus expectativas y opiniones sobre el partido de fútbol de la selección peruana.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "Esperamos que Perú ganemos, ¿no?",
+   "Que Perú gane. Es todo lo que yo pienso, pues."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

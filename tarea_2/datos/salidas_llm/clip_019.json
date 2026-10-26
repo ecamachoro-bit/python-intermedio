@@ -1,0 +1,18 @@
+{
+ "id": "clip_019",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Hostigamiento por decisión de ligadura",
+  "resumen": "El personal de salud hostigó y humilló a una paciente para convencerla de no someterse a una ligadura de trompas por tener un solo hijo.",
+  "idioma": "es",
+  "numero_hablantes": null,
+  "citas_clave": [
+   "Las obstetras acudieron a mi habitación para convencerme de que no debía ligarme teniendo un solo hijo",
+   "se encargaron de humillarme durante todo el camino, desde que salí de mi cuarto hasta el quirófano",
+   "me infantilizaban diciendo que yo era una inmadura"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

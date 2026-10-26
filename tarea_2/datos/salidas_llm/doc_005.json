@@ -1,0 +1,16 @@
+{
+ "id": "doc_005",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Diario de viaje por el Río Bermejo",
+  "resumen": "Fragmento del Mercurio Peruano que contiene el diario del viaje del coronel Don Juan Adrian Fernandez Cornejo navegando por el río Bermejo en el Gran Chaco.",
+  "idioma": "es",
+  "tipo_documento": "aviso",
+  "emisor": "MERCURIO PERUANO",
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

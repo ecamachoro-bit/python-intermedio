@@ -1,0 +1,16 @@
+{
+ "id": "doc_023",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "situación militar y política en el Cusco",
+  "resumen": "El texto discute problemas militares, la escasez de tropas y los riesgos de la guarnición en el Cusco frente a los enemigos y rebeldes.",
+  "idioma": "es",
+  "tipo_documento": "informe",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

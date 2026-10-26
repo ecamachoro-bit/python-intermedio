@@ -1,0 +1,17 @@
+{
+ "id": "clip_012",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "experiencia traumática de parto en hospital",
+  "resumen": "Una madre relata el maltrato verbal y físico recibido por el personal médico durante su labor de parto, lo cual resultó en una experiencia traumática y complicaciones para su bebé.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "¿ves? Es por tu culpa que tu niña está así.",
+   "en vez de vivir una bonita experiencia fue muy traumática para mí."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

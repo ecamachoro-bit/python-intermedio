@@ -1,0 +1,16 @@
+{
+ "id": "doc_020",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "cita filosófica de Wittgenstein",
+  "resumen": "El texto presenta una reflexión sobre los límites del lenguaje y el mundo atribuida a Wittgenstein.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

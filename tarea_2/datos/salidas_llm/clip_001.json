@@ -1,0 +1,17 @@
+{
+ "id": "clip_001",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Protesta de mujeres apurimeñas en Lima",
+  "resumen": "Una manifestante procedente de Apurímac expresa su apoyo al gobierno, exige el cierre del Congreso y lee un pronunciamiento en defensa de los derechos de la mujer y del Ministerio de la Mujer y Poblaciones Vulnerables.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "El Perú es una patria grande, donde todos los peruanos acá somos parte de eso.",
+   "Las mujeres peruanas nada nos han regalado, todo lo hemos conquistado con lucha, sacrificio..."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

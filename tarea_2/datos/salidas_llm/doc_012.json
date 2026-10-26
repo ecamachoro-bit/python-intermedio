@@ -1,0 +1,16 @@
+{
+ "id": "doc_012",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Veneración masiva al Hermano Mayor",
+  "resumen": "Una mujer y una multitud rinden culto fervoroso frente a una pantalla que muestra la imagen del Hermano Mayor, repitiendo cánticos rítmicos.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

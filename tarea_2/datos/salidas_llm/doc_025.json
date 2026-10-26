@@ -1,0 +1,16 @@
+{
+ "id": "doc_025",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "situación crítica del virreinato peruano",
+  "resumen": "El documento describe un virreinato amenazado e invadido por rebeldes en un contexto de desengaño popular, mencionando los meses de marzo y abril. Se remite un informe al Supremo Gobierno para su deliberación en el año 1822.",
+  "idioma": "es",
+  "tipo_documento": "informe",
+  "emisor": null,
+  "fecha": "Set.30.1822",
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

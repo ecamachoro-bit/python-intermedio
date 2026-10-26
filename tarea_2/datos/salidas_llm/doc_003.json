@@ -1,0 +1,16 @@
+{
+ "id": "doc_003",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Funcionamiento de los colegios electorales",
+  "resumen": "El documento detalla los artículos normativos sobre las funciones, actas y procedimientos de los colegios electorales de parroquia y de provincia en relación con la elección de diputados y suplentes.",
+  "idioma": "es",
+  "tipo_documento": "ley",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

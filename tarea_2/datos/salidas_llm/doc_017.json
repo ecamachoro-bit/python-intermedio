@@ -1,0 +1,16 @@
+{
+ "id": "doc_017",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "cita literaria sobre la amistad",
+  "resumen": "El texto presenta una cita atribuida a Shakespeare sobre la amistad y cómo conservar a los amigos verdaderos.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": "Shakespeiane",
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

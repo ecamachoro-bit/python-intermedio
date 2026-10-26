@@ -1,0 +1,17 @@
+{
+ "id": "clip_013",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "violencia obstétrica y negligencia médica",
+  "resumen": "Una exestudiante narra cómo una gestante adolescente sufrió la perforación del útero y una histerectomía debido a una mala praxis y la demora en la atención por falta de sangre.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "se produjo un ruido y una gran hemorragia porque el útero había sido perforado",
+   "el médico se negaba a operar a la paciente porque aducía que no había sangre a positivo"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

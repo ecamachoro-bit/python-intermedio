@@ -1,0 +1,17 @@
+{
+ "id": "clip_006",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Derechos y vivencias de la comunidad LGTBIQ+",
+  "resumen": "Un estudiante de la Facultad de Ciencias Biológicas entrevista a un participante sobre su visión acerca de la juventud y el significado de la marcha.",
+  "idioma": "es",
+  "numero_hablantes": 2,
+  "citas_clave": [
+   "nadie debe ser juzgado por esto",
+   "nuestro amor no hace daño a nadie"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

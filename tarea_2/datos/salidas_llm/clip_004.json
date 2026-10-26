@@ -1,0 +1,18 @@
+{
+ "id": "clip_004",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Expectativas sobre la selección peruana de fútbol",
+  "resumen": "Una entrevistadora conversa con dos señoras sobre las expectativas, jugadores determinantes y el resultado previsto para un partido de la selección peruana, destacando el fútbol como unión de masas.",
+  "idioma": "es",
+  "numero_hablantes": 3,
+  "citas_clave": [
+   "Que el afición se encuentra motivado para ganar este partido.",
+   "El Perú va a dar todo por todo, todo su corazón va a entregar para que ganemos",
+   "Hace que la gente se una. No hay distinción de raza ni religión, ¿no?"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

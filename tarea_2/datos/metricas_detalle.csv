@@ -1,0 +1,51 @@
+id,modalidad,grupo,modelo,métrica,valor
+doc_002,documento,impreso,PaddleOCR 3.7 (base),CER,0.1241
+doc_008,documento,impreso,PaddleOCR 3.7 (base),CER,0.0082
+doc_009,documento,foto,PaddleOCR 3.7 (base),CER,0.0294
+doc_010,documento,foto,PaddleOCR 3.7 (base),CER,0.4426
+doc_011,documento,foto,PaddleOCR 3.7 (base),CER,0.5238
+doc_012,documento,foto,PaddleOCR 3.7 (base),CER,0.0049
+doc_014,documento,foto,PaddleOCR 3.7 (base),CER,0.0973
+doc_017,documento,manuscrito,PaddleOCR 3.7 (base),CER,0.1942
+doc_018,documento,manuscrito,PaddleOCR 3.7 (base),CER,0.1395
+doc_019,documento,manuscrito,PaddleOCR 3.7 (base),CER,0.1453
+doc_002,documento,impreso,Tesseract 5 spa,CER,0.0251
+doc_008,documento,impreso,Tesseract 5 spa,CER,0.0098
+doc_009,documento,foto,Tesseract 5 spa,CER,0.3922
+doc_010,documento,foto,Tesseract 5 spa,CER,1.0
+doc_011,documento,foto,Tesseract 5 spa,CER,0.0
+doc_012,documento,foto,Tesseract 5 spa,CER,0.0016
+doc_014,documento,foto,Tesseract 5 spa,CER,0.3523
+doc_017,documento,manuscrito,Tesseract 5 spa,CER,1.0
+doc_018,documento,manuscrito,Tesseract 5 spa,CER,1.0
+doc_019,documento,manuscrito,Tesseract 5 spa,CER,0.9767
+clip_007,audio,marcha (ruido de multitud),faster-whisper small (base),WER,0.2329
+clip_009,audio,exteriores,faster-whisper small (base),WER,0.3584
+clip_010,audio,exteriores,faster-whisper small (base),WER,0.08
+clip_011,audio,estadio (ruido),faster-whisper small (base),WER,0.2564
+clip_022,audio,testimonio grabado,faster-whisper small (base),WER,0.0259
+clip_023,audio,testimonio grabado,faster-whisper small (base),WER,0.0928
+clip_024,audio,testimonio grabado,faster-whisper small (base),WER,0.1339
+clip_025,audio,testimonio grabado,faster-whisper small (base),WER,0.1525
+clip_027,audio,testimonio grabado,faster-whisper small (base),WER,0.1287
+clip_028,audio,testimonio grabado,faster-whisper small (base),WER,0.0741
+clip_007,audio,marcha (ruido de multitud),Whisper large-v3-turbo + VAD,WER,0.1096
+clip_009,audio,exteriores,Whisper large-v3-turbo + VAD,WER,0.1991
+clip_010,audio,exteriores,Whisper large-v3-turbo + VAD,WER,0.0533
+clip_011,audio,estadio (ruido),Whisper large-v3-turbo + VAD,WER,0.3333
+clip_022,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.0172
+clip_023,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.0103
+clip_024,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.0714
+clip_025,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.0847
+clip_027,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.1188
+clip_028,audio,testimonio grabado,Whisper large-v3-turbo + VAD,WER,0.1111
+clip_007,audio,marcha (ruido de multitud),Parakeet TDT 0.6B v3,WER,0.3288
+clip_009,audio,exteriores,Parakeet TDT 0.6B v3,WER,0.4646
+clip_010,audio,exteriores,Parakeet TDT 0.6B v3,WER,0.0667
+clip_011,audio,estadio (ruido),Parakeet TDT 0.6B v3,WER,0.4103
+clip_022,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.0086
+clip_023,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.0515
+clip_024,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.0714
+clip_025,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.1271
+clip_027,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.0693
+clip_028,audio,testimonio grabado,Parakeet TDT 0.6B v3,WER,0.0617

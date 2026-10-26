@@ -1,0 +1,17 @@
+{
+ "id": "clip_024",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "obstáculos en controles prenatales",
+  "resumen": "Una psicóloga comunitaria en Cajamarca descubrió que una usuaria gestante evitaba sus controles por temor a ser criticada, lo cual confirmó al escuchar los comentarios despectivos de las obstetras.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "¿Esa señora otra vez está embarazada?",
+   "Entendí por qué el usuario no se había atrevido a asistir a sus controles."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

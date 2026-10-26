@@ -1,0 +1,17 @@
+{
+ "id": "clip_020",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Maltrato en centro de salud",
+  "resumen": "Una paciente relata el trato cruel e inhumano por parte del personal de enfermería tras dar a luz, incluyendo agresiones físicas, insultos y condiciones precarias.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "Era un trato terrible e inhumano.",
+   "A las que no nos salía la leche nos decía que no servíamos."
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

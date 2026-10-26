@@ -1,0 +1,18 @@
+{
+ "id": "clip_026",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "transición de cultivos de coca a cacao",
+  "resumen": "La infancia del hablante estuvo marcada por carencias y el cultivo de coca en una zona roja, pero con gran esfuerzo lograron cambiar al cultivo de cacao, logrando mejoras económicas y un cambio de vida.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "hemos dejado la coca por el cacao",
+   "ha sido algo alternativo a la siembra de coca",
+   "muchos cambios para el bien tanto económico como el tema económico, como el tema de un cambio de vida mejor"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

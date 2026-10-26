@@ -1,0 +1,17 @@
+{
+ "id": "clip_011",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "análisis de la selección peruana de fútbol",
+  "resumen": "Se comenta sobre el desempeño de la selección peruana de fútbol y se critica el rendimiento de algunos jugadores, sugiriendo que el técnico debe realizar cambios.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "como ves a perú ahorita que está no se entiende no se están entendiendo",
+   "ahora el técnico tiene que hacer justo los cambios supongo"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

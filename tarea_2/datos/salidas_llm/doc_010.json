@@ -1,0 +1,16 @@
+{
+ "id": "doc_010",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "texto ilegible o fragmentado",
+  "resumen": "El texto es prácticamente ilegible y contiene errores de reconocimiento OCR.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

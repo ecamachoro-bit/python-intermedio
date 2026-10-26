@@ -1,0 +1,16 @@
+{
+ "id": "doc_022",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Diario de operaciones del ejército realista",
+  "resumen": "El documento relata las operaciones y movimientos del ejército realista del Perú bajo el mando del general Jerónimo Valdés tras los enfrentamientos contra las fuerzas de Bolívar en 1824.",
+  "idioma": "es",
+  "tipo_documento": "diario de operaciones",
+  "emisor": "General D. Geronimo Valdes",
+  "fecha": "20 de Agosto de 824",
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

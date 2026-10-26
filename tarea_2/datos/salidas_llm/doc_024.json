@@ -1,0 +1,16 @@
+{
+ "id": "doc_024",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "operaciones militares en la sierra",
+  "resumen": "Informe militar sobre movimientos de tropas, repliegues y un accidente en el puente de Pampas con ahogados.",
+  "idioma": "es",
+  "tipo_documento": "informe",
+  "emisor": "Ejército Nacional",
+  "fecha": "Mes de Marzo",
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

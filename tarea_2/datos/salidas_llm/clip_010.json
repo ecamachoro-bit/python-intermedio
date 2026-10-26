@@ -1,0 +1,18 @@
+{
+ "id": "clip_010",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Devoción al Santo Patrón de Chuyas Taitapalli",
+  "resumen": "La hablante explica que participa en la festividad del Santo Patrón de Chuyas Taitapalli debido a una larga tradición familiar y a los milagros recibidos.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "la fiesta de Santo Patrón de Chuyas Taitapalli es muy importante para mí y para mi familia",
+   "a mí me ha hecho muchos milagros",
+   "todos los chuyasinos, no solo yo, mi familia, todos creemos a nuestro Santo Patrón"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

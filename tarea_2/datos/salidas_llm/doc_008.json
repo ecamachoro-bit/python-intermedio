@@ -1,0 +1,16 @@
+{
+ "id": "doc_008",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Informe de la Junta de Vías Fluviales",
+  "resumen": "Se felicita a la Junta de Vías Fluviales y al ingeniero Torres por un valioso informe y colección de mapas que enriquecen la geografía nacional.",
+  "idioma": "es",
+  "tipo_documento": "informe",
+  "emisor": "Junta de Vías Fluviales",
+  "fecha": "Julio de 1901",
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

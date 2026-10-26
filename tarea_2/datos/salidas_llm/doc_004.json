@@ -1,0 +1,16 @@
+{
+ "id": "doc_004",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "principios constitucionales y derechos fundamentales",
+  "resumen": "El documento establece principios fundamentales del Estado peruano, incluyendo la religión católica oficial, la soberanía nacional a través de representantes, y diversas garantías constitucionales como la libertad, igualdad y división de poderes.",
+  "idioma": "es",
+  "tipo_documento": "ley",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

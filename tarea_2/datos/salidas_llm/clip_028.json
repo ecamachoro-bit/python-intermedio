@@ -1,0 +1,17 @@
+{
+ "id": "clip_028",
+ "modalidad": "audio",
+ "campos": {
+  "modalidad": "audio",
+  "tema": "Rol de la mujer en el agro",
+  "resumen": "La agricultura actual ha cambiado gracias a las capacitaciones y estudios, permitiendo verla como un negocio más rentable y optimizado.",
+  "idioma": "es",
+  "numero_hablantes": 1,
+  "citas_clave": [
+   "ver la agricultura de otro punto, como un negocio que ahora hay mucho más resultados",
+   "el agricultor aprovecha mayormente el tema de espacio, el tema de semillas y las ganancias son mucho mejor"
+  ]
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

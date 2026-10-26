@@ -1,0 +1,16 @@
+{
+ "id": "doc_009",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Reflexión poética sobre la defensa personal",
+  "resumen": "Poema corto donde el hablante reflexiona sobre una pregunta acerca de qué se defiende, respondiendo que más bien defiende a los demás de su propia luz.",
+  "idioma": "es",
+  "tipo_documento": "poema",
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}

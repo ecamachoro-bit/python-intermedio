@@ -1,0 +1,16 @@
+{
+ "id": "doc_007",
+ "modalidad": "documento",
+ "campos": {
+  "modalidad": "documento",
+  "tema": "Herencia y educación pública",
+  "resumen": "El texto reflexiona sobre la educación, la herencia de facultades y el desarrollo de la vida como un taller de perfeccionamiento que trasciende la muerte.",
+  "idioma": "es",
+  "tipo_documento": null,
+  "emisor": null,
+  "fecha": null,
+  "monto": null
+ },
+ "modelo_llm": "gemini-3.5-flash-lite",
+ "fecha": "2026-10-26"
+}
