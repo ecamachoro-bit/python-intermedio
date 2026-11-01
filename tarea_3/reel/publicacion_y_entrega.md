@@ -40,5 +40,5 @@ La voz del reel fue generada con IA a partir de mi propia voz. También usé IA 
 
 **Dashboard público:** https://ecamachoro-bit.github.io/python-intermedio/tarea_3/web/
 
-**Publicación de LinkedIn:** PEGAR_ENLACE_AQUÍ
+**Publicación de LinkedIn:** https://lnkd.in/p/efdvRAir
 ```

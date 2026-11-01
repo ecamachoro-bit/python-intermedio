@@ -27,7 +27,7 @@ ALTO_MAPA = 1080
 FONDO, TINTA, SUAVE, NARANJA, ORO, PANEL = (19, 21, 22), (248, 245, 238), (190, 194, 196), (255, 122, 58), (242, 190, 72), (20, 22, 24, 215)
 PROV = (255, 192, 158)
 AZUL, AZUL2 = (86, 156, 240), (176, 201, 233)
-PAUSA, INICIO, FINAL = 0.4, 0.5, 1.8
+PAUSA, INICIO, FINAL = 0.25, 0.3, 1.4
 F = "C:/Windows/Fonts/"
 fuente = lambda n, t: ImageFont.truetype(F + n, t)
 SERIF_B, SANS, SANS_B = "georgiab.ttf", "arial.ttf", "arialbd.ttf"
@@ -147,10 +147,10 @@ GRAF = {
 }
 CUADRE = {  # imagen, centro x, centro y, ancho inicial, ancho final
     "peru": ("peru", 690, 610, 900, 780),
-    "madre_de_dios": ("madre_de_dios", 680, 560, 1040, 900),
-    "puerto_inca": ("puerto_inca", 680, 620, 1100, 860),
-    "tambopata": ("tambopata", 700, 560, 860, 720),
-    "corredor": ("corredor", 680, 600, 1100, 950),
+    "madre_de_dios": ("madre_de_dios", 680, 470, 1040, 900),
+    "puerto_inca": ("puerto_inca", 680, 500, 1100, 860),
+    "tambopata": ("tambopata", 700, 400, 860, 720),
+    "corredor": ("corredor", 680, 470, 1100, 950),
 }
 
 # ---------- Música original: acordes suaves generados por código, sin obras de terceros ----------
@@ -290,12 +290,21 @@ def capa_fija(i):
     e = escenas[i]
     y = 1040
     if e["id"] != "padron":
+        trozos = e["cifra"].split(" → ")
         for t_ in range(150, 60, -6):
-            fc = fuente(SERIF_B, t_)
-            if d.textlength(e["cifra"], font=fc) <= ANCHO:
+            fc, fa = fuente(SERIF_B, t_), fuente(SANS_B, int(t_ * 0.8))
+            largo = sum(d.textlength(x, font=fc) for x in trozos) + (len(trozos) - 1) * (d.textlength("→", font=fa) + 2 * t_ * 0.22)
+            if largo <= ANCHO:
                 break
-        d.text((X0, y), e["cifra"], font=fc, fill=TINTA, anchor="ls")
-        y += 24
+        x_ = X0
+        for k, x in enumerate(trozos):  # Georgia no tiene flecha: se dibuja con otra fuente
+            d.text((x_, y), x, font=fc, fill=TINTA, anchor="ls")
+            x_ += d.textlength(x, font=fc)
+            if k < len(trozos) - 1:
+                x_ += t_ * 0.22
+                d.text((x_, y - t_ * 0.03), "→", font=fa, fill=NARANJA, anchor="ls")
+                x_ += d.textlength("→", font=fa) + t_ * 0.22
+        y += 44
         for li in envolver(d, e["etiqueta"], f_etq, ANCHO):
             d.text((X0, y), li, font=f_etq, fill=SUAVE)
             y += 46
@@ -328,8 +337,10 @@ def fondo(i, t0, t1, seg):
         x, y = max(0, min(cx - w / 2, 1365 - w)), max(0, cy - h / 2)
         return fuentes_img[e["id"]].resize((W, ALTO_MAPA), Image.BILINEAR, box=(x, y, x + w, min(y + h, 1250)))
     if e["id"] == "cierre":
-        desp = 60 + 180 * u
-        return tablero.resize((W, ALTO_MAPA), Image.BILINEAR, box=(0, desp, 1260, desp + 1040))
+        lienzo = Image.new("RGB", (W, ALTO_MAPA), FONDO)
+        desp = 40 + 220 * u
+        lienzo.paste(tablero.resize((960, 680), Image.BILINEAR, box=(0, desp, 1260, desp + 892)), (60, 225))
+        return lienzo
     return Image.new("RGB", (W, ALTO_MAPA), FONDO)
 
 

@@ -3,8 +3,12 @@
 **Tarea 3 · Python intermedio · QLAB PUCP · Eliana Camacho**
 
 - **Dashboard:** https://ecamachoro-bit.github.io/python-intermedio/tarea_3/web/
-- **Publicación de LinkedIn:** _pendiente_
+- **Publicación de LinkedIn:** https://lnkd.in/p/efdvRAir
 - **Reel:** [`reel/reel.mp4`](reel/reel.mp4)
+
+![Mapa e indicadores del dashboard](capturas/dashboard_mapa.png)
+
+![Gráficos del dashboard](capturas/dashboard_graficos.png)
 
 ## 1. Tema y pregunta de investigación
 
