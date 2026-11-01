@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minería informal en el Perú: lo que registra el Estado y lo que ve el satélite</title>
+<meta name="description" content="Dashboard interactivo que cruza REINFO, detecciones satelitales, áreas naturales, precio del oro y conflictos sociales. Perú, 2018-2026.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/maplibre-gl.css">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<header class="portada">
+  <div class="ancho">
+    <p class="antetitulo">Tarea 3 · Python intermedio · QLAB PUCP</p>
+    <h1>Minería informal: lo que registra el Estado y lo que ve el satélite</h1>
+    <p class="pregunta"><strong>Pregunta de investigación:</strong> ¿Dónde se expande la minería informal de oro en la Amazonía peruana y coincide esa expansión con lo que registra el Estado?</p>
+    <p class="contexto">El REINFO es el registro de quienes están en proceso de formalización minera. Aquí se cruza con cicatrices de minería detectadas por satélite, áreas naturales protegidas, el corredor minero de Madre de Dios, el precio del oro y los conflictos que reporta la Defensoría del Pueblo.</p>
+    <dl class="ficha">
+      <div><dt>Cobertura geográfica</dt><dd>Perú. El satélite solo cubre la cuenca amazónica.</dd></div>
+      <div><dt>Periodo</dt><dd>2018 a setiembre de 2026</dd></div>
+      <div><dt>Fuentes</dt><dd>Amazon Mining Watch, MINEM/INGEMMET, Banco Mundial y Defensoría del Pueblo</dd></div>
+    </dl>
+    <nav class="indice" aria-label="Secciones">
+      <a href="#explorar">Explorar</a><a href="#hallazgos">Hallazgos</a><a href="#comparar">Departamentos</a><a href="#metodo">Metodología</a><a href="#limites">Limitaciones</a><a href="#fuentes">Fuentes</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="hallazgos" class="ancho seccion">
+  <h2>Tres hallazgos</h2>
+  <div class="hallazgos">
+    <article>
+      <span class="num">1</span>
+      <h3>El ritmo se mantiene, pero aparece un nuevo frente</h3>
+      <p>Madre de Dios concentra el <strong>95 %</strong> de las detecciones. Fuera de ella destaca <strong>Puerto Inca (Huánuco)</strong>: pasó de <strong>65</strong> detecciones hasta 2023 a <strong>431</strong> nuevas entre 2024 y setiembre de 2026.</p>
+      <p class="contraste">Contraste: MAAP #233 también ubica en Madre de Dios el 97.5 % de la deforestación minera y a Huánuco como la siguiente región.</p>
+    </article>
+    <article>
+      <span class="num">2</span>
+      <h3>Avanza hacia zonas más sensibles</h3>
+      <p>En la <strong>Reserva Nacional Tambopata</strong> hubo <strong>16</strong> detecciones nuevas entre 2019 y 2024, y <strong>212</strong> desde 2025. En Madre de Dios, la parte <strong>fuera del corredor minero</strong> subió de <strong>28 %</strong> en 2024 a <strong>50 %</strong> en 2026.</p>
+      <p class="contraste">Contraste: MAAP #241 reporta 500 hectáreas deforestadas por minería ilegal en esa reserva entre 2025 y febrero de 2026. Los datos de 2025 y 2026 son provisionales.</p>
+    </article>
+    <article>
+      <span class="num">3</span>
+      <h3>El padrón se reduce, las cicatrices no se detienen</h3>
+      <p>El REINFO bajó de <strong>87,334</strong> inscripciones (febrero de 2025) a <strong>31,600</strong> (noviembre de 2026). Mientras tanto, siguieron apareciendo detecciones: <strong>2,396</strong> en 2025 y <strong>2,206</strong> hasta setiembre de 2026.</p>
+      <p class="contraste">Además, el precio del oro se multiplicó por 2.3 entre 2023 y 2026, pero las detecciones nuevas no crecieron en esa proporción. El precio por sí solo no explica el ritmo anual.</p>
+    </article>
+  </div>
+</section>
+
+<section id="explorar" class="seccion">
+  <div class="ancho">
+    <h2>Explora los datos</h2>
+    <p class="ayuda">Los filtros actualizan los indicadores, el mapa y los gráficos. Una detección es un parche de 480 × 480 m con señales de minería; no equivale a hectáreas minadas ni prueba ilegalidad.</p>
+  </div>
+  <form class="filtros ancho" id="filtros" aria-label="Filtros" onsubmit="return false">
+    <label>Departamento<select id="f-dep"></select></label>
+    <label>Desde<select id="f-desde"></select></label>
+    <label>Hasta<select id="f-hasta"></select></label>
+    <label>Zona<select id="f-zona">
+      <option value="todas">Todas las zonas</option>
+      <option value="anp">Dentro de área natural protegida</option>
+      <option value="amort">Zona de amortiguamiento</option>
+      <option value="fuera">Madre de Dios, fuera del corredor</option>
+      <option value="dentro">Madre de Dios, dentro del corredor</option>
+      <option value="lejos">Lejos de un punto del REINFO</option>
+    </select></label>
+    <label>Distancia al REINFO: <output id="s-km">5 km</output><input id="f-km" type="range" min="1" max="20" step="1" value="5"></label>
+    <div class="botones">
+      <button type="button" id="b-limpiar" class="secundario">Limpiar</button>
+      <button type="button" id="b-csv">Descargar CSV</button>
+    </div>
+  </form>
+
+  <div class="ancho">
+    <p class="estado" id="estado" role="status" aria-live="polite"></p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+
+  <div class="ancho mapa-marco">
+    <div class="mapa-cabecera">
+      <h3 id="t-mapa">Mapa de detecciones y registros</h3>
+      <div class="capas" role="group" aria-label="Capas del mapa">
+        <label><input type="checkbox" id="c-det" checked> Satélite</label>
+        <label><input type="checkbox" id="c-rej"> REINFO</label>
+        <label><input type="checkbox" id="c-anp" checked> Áreas naturales</label>
+        <label><input type="checkbox" id="c-cor" checked> Corredor minero</label>
+        <label class="sep">Fondo <select id="c-fondo"><option value="claro">Mapa</option><option value="sat">Imagen satelital</option></select></label>
+      </div>
+    </div>
+    <div id="mapa" role="region" aria-label="Mapa interactivo de detecciones de minería y registros REINFO"></div>
+    <ul class="leyenda" aria-label="Leyenda">
+      <li><i class="p p-rec"></i>Detección 2024-2026</li>
+      <li><i class="p p-ant"></i>Detección hasta 2023</li>
+      <li><i class="p p-rej"></i>REINFO, rejilla de unos 5.5 km</li>
+      <li><i class="a a-anp"></i>Área natural protegida</li>
+      <li><i class="a a-amo"></i>Amortiguamiento</li>
+      <li><i class="a a-cor"></i>Corredor minero (D.L. 1100)</li>
+    </ul>
+  </div>
+
+  <div class="ancho rejilla">
+    <figure class="tarjeta"><figcaption><h3>Detecciones nuevas por año</h3><p>Base de 2018 fuera del gráfico: <span id="base18"></span> detecciones acumuladas.</p></figcaption><div id="g-anual" class="grafico"></div>
+      <div class="ley-g"><span><i class="m m-conf"></i>Confirmado</span><span><i class="m m-prov"></i>Provisional</span></div></figure>
+    <figure class="tarjeta"><figcaption><h3>Provincias con más detecciones</h3><p>Según los filtros aplicados.</p></figcaption><div id="g-prov" class="grafico"></div></figure>
+    <figure class="tarjeta"><figcaption><h3>Avance sobre zonas sensibles</h3><p>Detecciones nuevas por año en cada zona, sin el filtro de Zona.</p></figcaption><div id="g-zonas" class="multiples"></div></figure>
+    <figure class="tarjeta"><figcaption><h3>Madre de Dios: fuera del corredor minero</h3><p>Porcentaje de detecciones nuevas de cada año.</p></figcaption><div id="g-corredor" class="grafico"></div></figure>
+    <figure class="tarjeta"><figcaption><h3>Precio del oro y detecciones nuevas</h3><p>Índice con 2019 = 100. El año 2026 llega hasta setiembre.</p></figcaption><div id="g-oro" class="grafico"></div>
+      <div class="ley-g"><span><i class="l l-oro"></i>Precio del oro</span><span><i class="l l-det"></i>Detecciones nuevas</span></div></figure>
+    <figure class="tarjeta"><figcaption><h3>El padrón del REINFO</h3><p>Inscripciones por estado en dos fechas.</p></figcaption><div id="g-padron" class="grafico"></div>
+      <div class="ley-g"><span><i class="m m-vig"></i>Vigentes</span><span><i class="m m-sus"></i>Suspendidas</span></div></figure>
+  </div>
+</section>
+
+<section id="comparar" class="ancho seccion">
+  <h2>Registro, satélite y conflictos por departamento</h2>
+  <p class="ayuda">Selecciona una fila para filtrar todo el tablero. Un cero en satélite no significa que no haya minería: el modelo cubre la cuenca amazónica y no ve minería subterránea.</p>
+  <label class="buscar">Buscar departamento<input id="f-buscar" type="search" placeholder="Por ejemplo, Apurímac"></label>
+  <div class="tabla-marco">
+  <table id="tabla">
+    <thead><tr>
+      <th><button data-c="n">Departamento</button></th>
+      <th class="n"><button data-c="t">REINFO</button></th>
+      <th class="n"><button data-c="ps">% suspendidas</button></th>
+      <th class="n"><button data-c="d">Detecciones</button></th>
+      <th class="n"><button data-c="r">Nuevas desde 2024</button></th>
+      <th class="n"><button data-c="c">Conflictos</button></th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <p class="nota">REINFO: corte al 26 de febrero de 2025. Conflictos: todos los tipos, reporte n.° 269 de la Defensoría (julio de 2026). Lima suma Lima Metropolitana y Provincias. Además hay 11 casos multirregionales y 2 nacionales. En julio de 2026, 61 de los 94 conflictos socioambientales estaban relacionados con minería.</p>
+</section>
+
+<section id="metodo" class="seccion fondo-suave">
+  <div class="ancho dos">
+    <div>
+      <h2>Metodología</h2>
+      <ol>
+        <li><strong>Satélite.</strong> Se usan las detecciones de Amazon Mining Watch (imágenes Sentinel-2). Cada una queda en el periodo en que se confirmó por primera vez.</li>
+        <li><strong>Ubicación.</strong> Cada detección se asigna a su provincia y se cruza con áreas naturales, amortiguamiento, reservas y el corredor minero, usando capas oficiales de GEOCATMIN.</li>
+        <li><strong>REINFO.</strong> Se descargaron solo campos no personales: nunca nombres ni RUC. El 99.6 % de las coordenadas coincide con el departamento declarado.</li>
+        <li><strong>Cruce.</strong> Para cada detección se mide la distancia al punto del REINFO más cercano. El umbral se puede cambiar porque el resultado depende de él: a más de 1 km está el 35 %; a más de 5 km, el 14 %; y a más de 10 km, el 9 %.</li>
+        <li><strong>Precio y conflictos.</strong> Se calcula el promedio anual del oro y se toma el cuadro por región del reporte n.° 269 de la Defensoría.</li>
+      </ol>
+    </div>
+    <div id="limites">
+      <h2>Limitaciones</h2>
+      <ul>
+        <li><strong>Una detección no prueba ilegalidad.</strong> Es una señal de minería vista desde el espacio.</li>
+        <li><strong>Cobertura parcial.</strong> El modelo apunta a la minería artesanal de oro a cielo abierto en la Amazonía. No sirve para medir zonas como Pataz, Arequipa o la minería subterránea. Por ejemplo, solo cerca del 12 % de Apurímac cae dentro del límite de cuenca publicado por el proyecto.</li>
+        <li><strong>2025 y 2026 son provisionales</strong> y usan otro criterio de confirmación, por lo que la comparación con años anteriores es orientativa. El primer trimestre suele registrar menos detecciones.</li>
+        <li><strong>2018 es un acumulado</strong> de todo lo visible hasta ese año, no un año de expansión.</li>
+        <li><strong>El REINFO incluye todos los minerales</strong> y sus coordenadas son declaradas. La capa geográfica tiene corte a febrero de 2025. Estar cerca de un punto no significa estar autorizado.</li>
+        <li><strong>Los conflictos incluyen todos los tipos</strong> por región. Sirven como contexto, no como medida de conflictos por minería informal.</li>
+        <li><strong>La correlación con el oro usa pocos años</strong> y no permite afirmar causalidad.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="fuentes" class="ancho seccion">
+  <h2>Fuentes</h2>
+  <ul class="fuentes">
+    <li><a href="https://source.coop/earthgenome/amazon-mining-watch">Amazon Mining Watch / Earth Genome</a>: detecciones satelitales, actualización del 16 de octubre de 2026 (CC BY 4.0).</li>
+    <li><a href="https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_REINFO/MapServer">REINFO en GEOCATMIN</a>: INGEMMET y MINEM, corte al 26 de febrero de 2025.</li>
+    <li><a href="https://pad.minem.gob.pe/REINFO_WEB/Index.aspx">Padrón público del REINFO</a>: MINEM, totales consultados el 1 de noviembre de 2026.</li>
+    <li><a href="https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_AREA_RESERVADA/MapServer">Áreas naturales y reservas</a> y <a href="https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MADRE_DIOS/MapServer">corredor minero de Madre de Dios</a>: GEOCATMIN.</li>
+    <li><a href="https://www.worldbank.org/en/research/commodity-markets">Precio del oro</a>: Banco Mundial, Pink Sheet, actualización del 2 de octubre de 2026.</li>
+    <li><a href="https://www.defensoria.gob.pe/wp-content/uploads/2026/08/Reporte-de-Conflictos-Sociales-n-269.pdf">Reporte de Conflictos Sociales n.° 269</a>: Defensoría del Pueblo, julio de 2026.</li>
+    <li>Para contrastar: <a href="https://www.maapprogram.org/mining-peru-tambopata/">MAAP #241</a> y <a href="https://aidesep.org.pe/wp-content/uploads/2025/09/MAAP-233.-Situacion-actual-de-Mineria-de-Oro-en-1.pdf">MAAP #233</a>.</li>
+  </ul>
+  <p class="nota">Autora: Eliana Camacho. Análisis y tablero desarrollados con apoyo de IA (Claude Code). Cifras verificadas contra las fuentes indicadas.</p>
+</section>
+</main>
+<div id="tip" role="tooltip" hidden></div>
+<script src="assets/maplibre-gl.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

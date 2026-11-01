@@ -1,0 +1,7 @@
+{
+  "descargado_utc": "2026-11-01 22:22",
+  "amw": "https://data.source.coop/earthgenome/amazon-mining-watch/amazon_basin_detections.geojson",
+  "reinfo": "https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_REINFO/MapServer/0",
+  "areas": "https://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_AREA_RESERVADA/MapServer",
+  "oro": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+}

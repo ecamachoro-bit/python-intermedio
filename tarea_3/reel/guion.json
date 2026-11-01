@@ -1,0 +1,56 @@
+{
+  "titulo": "Minería informal: lo que registra el Estado y lo que ve el satélite",
+  "fuente": "Amazon Mining Watch · MINEM/INGEMMET · Defensoría",
+  "nota": "En 'frase', {hablado|mostrado} indica cómo se pronuncia una cifra y cómo aparece en el subtítulo.",
+  "escenas": [
+    {
+      "id": "peru",
+      "frase": "{Casi veintinueve mil|Casi 29,000} cicatrices de minería de oro, vistas desde el espacio. ¿Coinciden con lo que registra el Estado?",
+      "cifra": "28,829",
+      "etiqueta": "detecciones satelitales en el Perú, 2018 a setiembre de 2026",
+      "verificacion": "detecciones_peru.csv: 28,829 filas"
+    },
+    {
+      "id": "madre_de_dios",
+      "frase": "El {noventa y cinco por ciento|95 %} está en Madre de Dios. Y el ritmo nacional casi no cambia: {dos mil trescientas noventa y seis|2,396} detecciones nuevas en {dos mil veinticinco|2025}.",
+      "cifra": "95 %",
+      "etiqueta": "de las detecciones está en Madre de Dios",
+      "verificacion": "27,377 de 28,829; 2,396 en 2025 frente a un promedio de 2,367 en 2019-2024"
+    },
+    {
+      "id": "puerto_inca",
+      "frase": "Pero aparece un nuevo frente. En Puerto Inca, Huánuco, hubo {sesenta y cinco|65} detecciones hasta {dos mil veintitrés|2023}, y {cuatrocientas treinta y una|431} nuevas desde entonces.",
+      "cifra": "65 → 431",
+      "etiqueta": "Puerto Inca: hasta 2023 y nuevas de 2024 a setiembre de 2026",
+      "verificacion": "analizar_datos.py: hasta2023=65, desde2024=431"
+    },
+    {
+      "id": "tambopata",
+      "frase": "También avanza hacia zonas sensibles. En la Reserva Nacional Tambopata hubo {dieciséis|16} detecciones nuevas en seis años, y {doscientas doce|212} desde {dos mil veinticinco|2025}.",
+      "cifra": "16 → 212",
+      "etiqueta": "Reserva Nacional Tambopata: 2019-2024 y 2025 a setiembre de 2026 (provisional)",
+      "verificacion": "4+2+4+2+2+2=16; 50+162=212"
+    },
+    {
+      "id": "corredor",
+      "frase": "En Madre de Dios, cerca de la mitad de lo detectado en {dos mil veintiséis|2026} está fuera del corredor minero. En {dos mil veinticuatro|2024} era poco más de la cuarta parte.",
+      "cifra": "28 % → 50 %",
+      "etiqueta": "detecciones nuevas fuera del corredor minero, 2024 y 2026 (provisional)",
+      "verificacion": "2024: 27.6 %; 2026: 49.7 %"
+    },
+    {
+      "id": "padron",
+      "frase": "Mientras tanto, el padrón de formalización bajó de más de {ochenta y siete mil|87,000} a {treinta y un mil seiscientas|31,600} inscripciones. Un padrón más corto no significa menos minería.",
+      "cifra": "87,334 → 31,600",
+      "etiqueta": "inscripciones en el REINFO, febrero de 2025 y noviembre de 2026",
+      "verificacion": "GEOCATMIN 87,334; padrón web 31,600"
+    },
+    {
+      "id": "cierre",
+      "frase": "Una detección no prueba ilegalidad, pero sí muestra dónde mirar. Explora los datos en el tablero. El enlace está en la publicación.",
+      "cifra": "Explora los datos",
+      "etiqueta": "Tablero interactivo: enlace en la publicación",
+      "verificacion": "Cierre con invitación"
+    }
+  ]
+}

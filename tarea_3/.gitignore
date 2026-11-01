@@ -1,0 +1,17 @@
+# Archivos pesados: se regeneran con scripts/obtener_datos.py
+datos/originales/*.geojson
+datos/originales/*.xlsx
+datos/originales/*.csv
+datos/originales/*.pdf
+!datos/originales/fuentes.json
+__pycache__/
+# La voz de referencia y los audios intermedios no se publican
+reel/recursos/mi_voz*
+reel/salidas/
+
+# Grabaciones originales de voz
+reel/recursos/*.ogg
+reel/recursos/*.opus
+reel/recursos/*.m4a
+reel/narrar.log
+reel/recursos/visuales/
