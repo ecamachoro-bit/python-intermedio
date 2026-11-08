@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "bcrp": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--project", ".", "mcp/server.py"]
+    }
+  }
+}

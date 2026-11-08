@@ -1,0 +1,11 @@
+mcp/test_server.py::test_buscar_encuentra_el_ipc PASSED                  [ 10%]
+mcp/test_server.py::test_cuatro_herramientas_como_minimo PASSED          [ 20%]
+mcp/test_server.py::test_serie_mensual PASSED                            [ 30%]
+mcp/test_server.py::test_serie_diaria PASSED                             [ 40%]
+mcp/test_server.py::test_resumen_sin_cuentas_a_mano PASSED               [ 50%]
+mcp/test_server.py::test_codigo_inexistente_da_un_error_claro PASSED     [ 60%]
+mcp/test_server.py::test_un_recurso PASSED                               [ 70%]
+mcp/test_server.py::test_un_prompt PASSED                                [ 80%]
+mcp/test_server.py::test_brecha_oro_calculo_y_unidades PASSED            [ 90%]
+mcp/test_server.py::test_brecha_oro_desde_el_bcrp PASSED                 [100%]
+============================= 10 passed in 5.68s ==============================

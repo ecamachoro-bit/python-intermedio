@@ -1,0 +1,17 @@
+Validación ENAHO 2015 (código INEI 498)
+
+Hogares en la sumaria:            32,188
+Población expandida (factor07 x mieperho): 31,660,894
+
+Pobreza (sumaria, factor07 x mieperho):  21.77 %
+Pobreza extrema (sumaria):               4.07 %
+Pobreza SIN ponderar (solo control, no usar): 20.14 %
+Cifra oficial INEI:                      21.8 %
+
+Verificaciones:
+[PASA] Llaves de hogar únicas en la sumaria
+[PASA] 25 códigos territoriales (ubigeo[:2] = 01..25): 25 encontrados
+[PASA] Factores de expansión positivos y sin vacíos
+[PASA] Pobreza nacional ponderada a ±0.1 pp del INEI (21.8 %): 21.77 %
+
+RESULTADO: OK, todas las verificaciones pasan

@@ -1,0 +1,23 @@
+[project]
+name = "tarea-4-agente-mineria-pobreza"
+version = "0.1.0"
+description = "Agente de investigación: MCP del BCRP + Skills de ENAHO para comparar pobreza en departamentos mineros formales e informales"
+authors = [{ name = "Eliana Camacho", email = "e.camacho.ro@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=4,<5",
+    "httpx",
+    "pandas",
+    "pyarrow",
+    "pyreadstat",
+    "geopandas",
+    "matplotlib",
+    "openpyxl",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["mcp"]
+testpaths = ["mcp"]

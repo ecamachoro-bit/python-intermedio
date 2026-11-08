@@ -1,0 +1,26 @@
+ccdd,departamento,grupo,grupo_nombre,criterio
+01,Amazonas,D,Resto,Sin minería relevante
+02,Áncash,A,Formal de gran escala,Gran productor de cobre y zinc (Antamina; MINEM); empleo en campamento no captado por ENAHO
+03,Apurímac,C,Mixto,Gran minería de cobre (Las Bambas) y 44 % de informalidad minera (ENAHO 2024; n=13); REINFO 2037
+04,Arequipa,C,Mixto,3.er productor de oro y cobre; 2.º en REINFO (4328); ~7 mil mineros informales (ENAHO 2024)
+05,Ayacucho,B,Informal con poco oro declarado,3.1 % del empleo en minería y 64 % informal (ENAHO 2024); REINFO 1468; poca gran minería
+06,Cajamarca,A,Formal de gran escala,2.º productor de oro (Yanacocha; MINEM); sin REINFO relevante
+07,Callao,D,Resto,Sin minería
+08,Cusco,C,Mixto,Gran minería de cobre (Antapaccay) y 41 % de informalidad minera (ENAHO 2024; n=17)
+09,Huancavelica,D,Resto,Minería formal mediana (no de gran escala): decisión del estudio
+10,Huánuco,D,Resto,Sin minería relevante
+11,Ica,A,Formal de gran escala,Hierro (Marcona); 10 % de informalidad minera (ENAHO 2024) corrige el perfil mixto de la fuente secundaria
+12,Junín,A,Formal de gran escala,Cobre (Toromocho); 2.5 % del empleo en minería y 9 % informal (ENAHO 2024)
+13,La Libertad,C,Mixto,1.er productor de oro 2025 y 55 % de informalidad minera (Pataz; ENAHO 2024)
+14,Lambayeque,D,Resto,Sin minería relevante
+15,Lima,D,Resto,Pobreza dominada por Lima Metropolitana; minería formal de zinc y plomo en provincias
+16,Loreto,D,Resto,Sin minería relevante
+17,Madre de Dios,B,Informal con poco oro declarado,6.1 % del empleo en minería y 89 % informal (ENAHO 2024); sin gran minería
+18,Moquegua,A,Formal de gran escala,Cobre (Quellaveco y Cuajone); 0 % de informalidad minera (ENAHO 2024)
+19,Pasco,A,Formal de gran escala,Zinc plomo y plata; 5.4 % del empleo en minería y 1.5 % informal (ENAHO 2024)
+20,Piura,D,Resto,Minería informal de oro existente pero 0.3 % del empleo (ENAHO 2024)
+21,Puno,B,Informal con poco oro declarado,3.0 % del empleo en minería y 55 % informal (ENAHO 2024); 1.º en REINFO (4495)
+22,San Martín,D,Resto,Sin minería relevante
+23,Tacna,A,Formal de gran escala,Cobre (Toquepala); 4 % de informalidad minera (ENAHO 2024)
+24,Tumbes,D,Resto,Sin minería
+25,Ucayali,D,Resto,Sin minería relevante

@@ -1,0 +1,17 @@
+Validación ENAHO 2020 (código INEI 737)
+
+Hogares en la sumaria:            34,490
+Población expandida (factor07 x mieperho): 32,969,391
+
+Pobreza (sumaria, factor07 x mieperho):  30.13 %
+Pobreza extrema (sumaria):               5.15 %
+Pobreza SIN ponderar (solo control, no usar): 22.39 %
+Cifra oficial INEI:                      30.1 %
+
+Verificaciones:
+[PASA] Llaves de hogar únicas en la sumaria
+[PASA] 25 códigos territoriales (ubigeo[:2] = 01..25): 25 encontrados
+[PASA] Factores de expansión positivos y sin vacíos
+[PASA] Pobreza nacional ponderada a ±0.1 pp del INEI (30.1 %): 30.13 %
+
+RESULTADO: OK, todas las verificaciones pasan

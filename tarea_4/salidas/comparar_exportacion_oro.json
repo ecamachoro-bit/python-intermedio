@@ -1,0 +1,26 @@
+{
+  "codigo": "PM40098BA",
+  "nombre": "Exportaciones de Productos Tradicionales (valores FOB millones US$) - Mineros - Oro - Volumen (millones de onzas troy)",
+  "periodo_a": {
+    "desde": "2015",
+    "hasta": "2019",
+    "n": 5,
+    "promedio": 6179.449152,
+    "minimo": 5743.77214027693,
+    "maximo": 6563.922131
+  },
+  "periodo_b": {
+    "desde": "2020",
+    "hasta": "2024",
+    "n": 5,
+    "promedio": 5591.526534,
+    "minimo": 4426.63110214395,
+    "maximo": 6513.72780121846
+  },
+  "diferencia": -587.922618,
+  "variacion_pct": -9.5142,
+  "fuente": [
+    "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PM40098BA/json/2015/2019",
+    "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PM40098BA/json/2020/2024"
+  ]
+}

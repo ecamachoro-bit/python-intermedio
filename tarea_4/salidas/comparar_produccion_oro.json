@@ -1,0 +1,26 @@
+{
+  "codigo": "RD15543DA",
+  "nombre": "Producción de productos mineros según departamentos - Oro - Total (grs.f)",
+  "periodo_a": {
+    "desde": "2015",
+    "hasta": "2019",
+    "n": 5,
+    "promedio": 143226304.116222,
+    "minimo": 128339032.320931,
+    "maximo": 151964039.956411
+  },
+  "periodo_b": {
+    "desde": "2020",
+    "hasta": "2024",
+    "n": 5,
+    "promedio": 96512538.710733,
+    "minimo": 85946523.086997,
+    "maximo": 105437816.108289
+  },
+  "diferencia": -46713765.405489,
+  "variacion_pct": -32.6154,
+  "fuente": [
+    "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/RD15543DA/json/2015/2019",
+    "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/RD15543DA/json/2020/2024"
+  ]
+}

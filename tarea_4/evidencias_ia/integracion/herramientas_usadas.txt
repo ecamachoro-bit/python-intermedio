@@ -1,0 +1,1 @@
+{'ToolSearch': 1, 'Glob': 1, 'Bash': 7, 'mcp__bcrp__buscar_series': 2, 'mcp__bcrp__brecha_oro': 1, 'mcp__bcrp__oro_por_departamento': 1, 'mcp__bcrp__comparar_periodos': 1, 'Write': 3, 'Skill:limpiando-enaho': 1, 'Skill:graficando-enaho': 1, 'Skill:mapeando-enaho': 1, 'Edit': 1}

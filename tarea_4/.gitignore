@@ -1,0 +1,9 @@
+# Microdatos del INEI y descargas pesadas (se bajan con las instrucciones del README)
+datos/
+mcp/datos/
+salidas/*.parquet
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+~$*
