@@ -63,7 +63,9 @@ Evidencia: [`evidencias_ia/mcp/pruebas.txt`](evidencias_ia/mcp/pruebas.txt).
 Reglas de la limpieza: llaves como texto, residentes habituales `((p204==1)&(p205==2))|((p204==2)&(p206==1))`,
 `merge(..., validate="m:1")`, ponderación `factor07 × mieperho` (hogares) o `facpob07` (personas), y un informe
 `[PASA]/[FALLA]` que detiene el proceso si algo falla. Las Skills de gráficos y mapas piden correr primero
-`limpiando-enaho` si no existe la base.
+`limpiando-enaho` si no existe la base: demostrado en
+[`evidencias_ia/skills/coordinacion_skills.md`](evidencias_ia/skills/coordinacion_skills.md) (pedido en lenguaje
+natural → `mapeando-enaho` → `limpiando-enaho` → mapa).
 
 **Validación ENAHO 2024** ([`salidas/validacion.txt`](salidas/validacion.txt)): pobreza 27.58 % (27.6 % INEI),
 108,664 residentes habituales, 25/25 departamentos, unión sin duplicados. Los años 2015-2023 también replican la

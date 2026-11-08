@@ -7,6 +7,7 @@ de ejecuciones no interactivas (`claude -p`) que también son evidencia. Se ocul
 |---|---|
 | [`conversacion_desarrollo.md`](conversacion_desarrollo.md) | **Conversación completa** de desarrollo (exportada del historial de Claude Code con `scripts/exportar_conversacion.py`): lectura del enunciado, definición de los grupos mineros con la estudiante, servidor MCP, Skills, integración, evaluación, errores y correcciones |
 | [`mcp/pruebas.txt`](mcp/pruebas.txt) | `pytest -v`: 10 passed (8 originales + 2 propias) |
+| [`skills/coordinacion_skills.md`](skills/coordinacion_skills.md) | **Coordinación de Skills:** en una copia del proyecto sin `salidas/`, el pedido «Haz un mapa de la pobreza monetaria por departamento con ENAHO 2024» activó `mapeando-enaho`, que detectó la falta de la base, ejecutó `limpiando-enaho` (validación OK) y luego hizo el mapa (25/25) |
 | [`skills/`](skills/) | Validaciones de la Skill de limpieza (2024 y 2015-2023) y comparación del mapa con la referencia de la Sesión 16 (25/25) |
 | [`integracion/prompt_agente.md`](integracion/prompt_agente.md) | Pedido dado al agente para la ejecución integrada |
 | [`integracion/ejecucion_agente.jsonl`](integracion/ejecucion_agente.jsonl) | Registro completo (stream-json) de esa ejecución: 4 herramientas MCP + 3 Skills en una misma sesión |
